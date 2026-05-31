@@ -1,0 +1,21 @@
+:root { color-scheme: light; --line: #e6e4db; --ink: #1f1e1b; --mut: #6b6a64; --accent: #185fa5; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #faf9f5; color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Segoe UI", sans-serif; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 28px 20px; }
+header h1 { font-size: 24px; margin: 0 0 4px; }
+header p { color: var(--mut); margin: 0 0 20px; font-size: 14px; }
+.drop { display: flex; align-items: center; justify-content: center; height: 200px; border: 2px dashed var(--line);
+  border-radius: 14px; background: #fff; cursor: pointer; color: var(--accent); font-weight: 500; }
+.drop:hover { border-color: var(--accent); }
+.bar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 14px; }
+.search { flex: 1; min-width: 180px; height: 36px; padding: 0 12px; border: 1px solid var(--line); border-radius: 8px; font: inherit; }
+.bar label { font-size: 13px; color: var(--mut); display: flex; align-items: center; gap: 4px; }
+.count { font-size: 13px; color: var(--mut); }
+button { font: inherit; font-size: 13px; padding: 8px 14px; border: 1px solid var(--accent); background: var(--accent); color: #fff; border-radius: 8px; cursor: pointer; }
+button:hover { opacity: 0.92; }
+.tableWrap { border: 1px solid var(--line); border-radius: 12px; overflow: auto; background: #fff; max-height: 70vh; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { position: sticky; top: 0; background: #f1efe8; font-weight: 600; }
+.more { color: var(--mut); font-size: 12px; padding: 10px 12px; margin: 0; }
